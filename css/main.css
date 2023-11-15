@@ -293,9 +293,9 @@
 
      .active{
         color: white;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-        padding: 1em 1em;
+        border-left: 1px solid #ff7a59;
+        border-right: 1px solid #ff7a59;
+        padding: 0em 0em;
      }
      
      #home {
@@ -432,3 +432,30 @@
     border: 2px solid black; /* Añade un borde blanco de 2px */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra */
   }
+
+  .container-obj #demo {
+    color: #ADBAC7;
+    font-size: 20px;
+  }
+
+  .container-obj p{
+    color: white;
+    font-size: 18px;
+  }
+
+  .container-obj h2{
+    color: #ADBAC7;
+   
+  }
+
+  .container-obj hr{
+    border: 1px solid #444C56;
+  }
+
+  .content {
+    color: #fff;
+    /* background-color: #2D333B; */
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}

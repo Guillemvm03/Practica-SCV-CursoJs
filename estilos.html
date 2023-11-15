@@ -20,6 +20,27 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+<!-- STYLE -->
+
+<script type="text/javascript">
+
+    function alterStyle(elem) {
+      elem.style.background = 'green';
+    }
+    
+    function resetStyle(elemId) {
+      elem = document.getElementById(elemId);
+      elem.style.background = '#22272E';
+    }
+    </script>
+    
+    <style type="text/css">
+    #p1 {
+     border: solid blue 2px;
+    }
+    </style>
+
 </head>
 
 <body>
@@ -42,9 +63,8 @@
   </div>
 
   <header>
-    
     <nav class="container">
-      <div id="home" class="active">
+      <div id="home" >
         <a href="/" class="navLinks">Home</a>
       </div>
       <div id="css">
@@ -52,7 +72,7 @@
       </div>
       <div class="logo">
       </div>
-      <div id="js">
+      <div id="js" class="active">
         <a href="estilos.html" class="navLinks">Estilos CSS</a>
       </div>
       <div id="laas">
@@ -62,33 +82,40 @@
   </header>
 
 <br><br><br>
-  <div class="container-obj">
-    <h1>Objetivos Principales</h1>
-    <ol>
-        <li>
-            <strong>Excelencia en la Enseñanza:</strong>
-            <p>Proporcionar una experiencia educativa de alta calidad con instructores expertos en desarrollo web y JavaScript.</p>
-        </li>
-        <li>
-            <strong>Accesibilidad y Flexibilidad:</strong>
-            <p>Ofrecer cursos en línea para que los estudiantes puedan aprender a su propio ritmo desde cualquier lugar del mundo.</p>
-        </li>
-        <li>
-            <strong>Proyecto Práctico y Orientado a Resultados:</strong>
-            <p>Enfocarse en el aprendizaje activo mediante proyectos del mundo real para construir un sólido portafolio.</p>
-        </li>
-        <li>
-            <strong>Comunidad de Aprendizaje Colaborativo:</strong>
-            <p>Fomentar un ambiente de colaboración con foros, sesiones de estudio en grupo y eventos en línea.</p>
-        </li>
-    </ol>
-    
-      <img src="https://imgs.search.brave.com/r92Q6_m9hmu8wmvtlzVzy9L48qINbyaWW6ujoXmHFjM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29kaW5nZG9qby5s/YS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wMy9ob21icmUt/bXV5LWNlbnRyYWRv/LXN1LXRyYWJham8t/MS5qcGc" alt="Descripción de la imagen" width="350" height="300">
-    
-  </div>
 
 
- 
+
+    <div class="container-obj">
+
+
+        <h1>Que podemos hacer con JavaScript?</h1> <br>
+
+       
+
+            <h2>
+                Cambiar estilos CSS con JavaScript
+            </h2>
+
+            <hr>
+
+       <p>Para cambiar los estilos CSS con JavaScript, se puede utilizar la propiedad style del elemento HTML que se quiere modificar. </p>
+      
+       <p> Se puede utilizar por ejemplo :document.getElementById("miElemento").style.backgroundColor = "red";. De esta forma, se puede modificar cualquier propiedad CSS de un elemento HTML utilizando JavaScript.</p>
+
+       <hr>
+
+       <h2>Prueba tu Mismo </h2>
+     
+    <p id="p1" onclick="alterStyle(this)";>
+    Haz clic aquí para cambiar el color de fondo. </p>
+   
+  
+   <button onclick="resetStyle('p1');">Volver al color de fondo original</button>
+
+    </div>
+
+
+
   <footer>
     <small>Guillem Vicent Martí</small>
     <address>

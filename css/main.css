@@ -425,12 +425,12 @@
   }
 
   .container-obj img {
-    position: absolute;
+    /* position: absolute;
     top: 55%;
     right: 5%;
-    transform: translateY(-50%);
-    border: 2px solid black; /* Añade un borde blanco de 2px */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+    transform: translateY(-50%); */
+    border: 2px solid black; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
   }
 
   .container-obj .change {

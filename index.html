@@ -33,8 +33,8 @@
       <div class="bc-banner-header">
       </div>
       <div class="bc-banner-body">
-        <h2>Curso JS Guillem Vicent</h2>
-        <p>Aprende a programar JS en 3 meses</p>
+        <h2>Práctica SCV-GVICENT</h2>
+        <p>GH_PAGES</p>
       </div>
       <img src="https://www.hubspot.com/hs-fs/hubfs/lead-capture-3-1.jpg?width=1800&name=lead-capture-3-1.jpg"
         alt="HubSpot Marketing Free" class="bc-banner-cover img-responsive">
@@ -42,60 +42,406 @@
   </div>
 
   <header>
-    
+
     <nav class="container">
       <div id="home" class="active">
-        <a href="/" class="navLinks">Home</a>
+        <a href="#Usuario1" class="navLinks">Usuario1</a>
       </div>
       <div id="css">
-        <a href="contenidohtml.html" class="navLinks">Modificar Contenido HTML</a>
+        <a href="#Usuario2" class="navLinks">USUARIO2</a>
       </div>
       <div class="logo">
       </div>
       <div id="js">
-        <a href="estilos.html" class="navLinks">Estilos CSS</a>
+        <a href="#Usuario3" class="navLinks">USUARIO3</a>
       </div>
       <div id="laas">
-        <a href="atributos.html" class="navLinks">Modificar Atributos HTML</a>
+        <a href="#USUARIO1MEJORA" class="navLinks">USUARIO 1 MEJORA</a>
       </div>
     </nav>
   </header>
 
-<br><br><br>
+  <br><br><br>
+
   <div class="container-obj">
-    <h1>Objetivos Principales</h1>
-    <ol>
-        <li>
-            <strong>Excelencia en la Enseñanza:</strong>
-            <p>Proporcionar una experiencia educativa de alta calidad con instructores expertos en desarrollo web y JavaScript.</p>
-        </li>
-        <li>
-            <strong>Accesibilidad y Flexibilidad:</strong>
-            <p>Ofrecer cursos en línea para que los estudiantes puedan aprender a su propio ritmo desde cualquier lugar del mundo.</p>
-        </li>
-        <li>
-            <strong>Proyecto Práctico y Orientado a Resultados:</strong>
-            <p>Enfocarse en el aprendizaje activo mediante proyectos del mundo real para construir un sólido portafolio.</p>
-        </li>
-        <li>
-            <strong>Comunidad de Aprendizaje Colaborativo:</strong>
-            <p>Fomentar un ambiente de colaboración con foros, sesiones de estudio en grupo y eventos en línea.</p>
-        </li>
-    </ol>
-    
-      <img src="https://imgs.search.brave.com/r92Q6_m9hmu8wmvtlzVzy9L48qINbyaWW6ujoXmHFjM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29kaW5nZG9qby5s/YS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wMy9ob21icmUt/bXV5LWNlbnRyYWRv/LXN1LXRyYWJham8t/MS5qcGc" alt="Descripción de la imagen" width="350" height="300">
-    
-  </div>
 
 
- 
-  <footer>
+    <section id="Usuario1">
+
+      <h1>USUARIO1</h1>
+
+      <hr>
+
+      <ol>
+
+        <li>
+          <strong>CREAR TEMPLATE</strong>
+          Seguiremos las instrucciones del link proporcionado y crearemos el repo en local.
+          <img src="./img/1.png" alt="">
+        </li>
+
+        <hr>
+
+        <li>
+          <strong>SUBIR A REMOTO</strong>
+          Seguidamente comprobamos que funciona (“npm run dev”) y subiremos el repo a remoto.
+
+          <img src="./img/2.png" alt="">
+          <img src="./img/2.1.png" alt="">
+        </li>
+
+        <hr>
+
+        <li>
+          <strong>Comprobación</strong>
+          Podremos observar que en el repo de github está el commit inicial hecho por el usuario1.
+
+          <img src="./img/3.png" alt="">
+        </li>
+
+        <hr>
+
+        <li>
+          <strong>Implementacion git-flow</strong>
+
+          <br>
+          Crear develop:Crearemos la rama develop con el comando: “git checkout -b develop”. Esta rama la utilizaremos
+          como rama de desarrollo. No trabajaremos sobre ella directamente. De esta rama nacen todas las ramas de
+          feature.
+          <br>
+          Crear feature: Crearemos una rama de feature para el usuario 1 donde se añadirán nuevas funcionalidades.
+          Cuando acabameos de añadir todas las funcionalidades a esta rama, la rama develop hará un merge sobre está.
+
+          <br>
+          Crear hotfix: La utilizaremos para corregir errores críticos y según avancemos iremos haciendo merges sobre la
+          rama develop.
+          <br>
+          <br>
+
+          <img src="./img/4.png" alt="">
+        </li>
+
+
+        <hr>
+
+
+        <li>
+          <strong>Usuario1-Desarrollo de la Página
+          </strong>
+          Ahora simulando que somos el usuario1 vamos a modificar el template anteriormente creado para añadir aspectos
+          como el header, barra de navegación, footer etc…
+          Después subiremos los cambios realizados a la rama “feature/usuario1”.
+
+          <img src="./img/5.png" alt="">
+        </li>
+
+        <hr>
+
+
+
+        <li>
+          <strong>Usuario1-Instalar-Husky
+          </strong>
+          Primero instalaremos las dependencias necesarias para poder trabajar con husky.
+          Ahora añadiremos dentro de la carpeta “.husky” los archivos “commit-msg” y “post-checkout”
+
+          <img src="./img/6.png" alt="">
+        </li>
+
+        <hr>
+
+
+        <li>
+          <strong>Usuario1-Hook-commit-msg
+          </strong>
+
+          Ahora editaremos el archivo “commit-msg” y añadiremos un script que hará lo siguiente:
+          -Comprobar que estamos en la rama hotfix
+          -Comprobar que el mensaje de commit es correcto
+
+          <img src="./img/7.png" alt="">
+        </li>
+
+        <hr>
+
+
+        <li>
+          <strong>Usuario1-Hook-post-checkout
+          </strong>
+          Primero crearemos el archivo dentro de la carpeta husky. Después visitaremos la web proporcionada y añadiremos
+          un dibujo al mensaje post-checkout.
+
+          <img src="./img/8.png" alt="">
+        </li>
+
+        <hr>
+
+        <li>
+          <strong>Usuario1-Develop-Merge
+          </strong>
+          Después de terminar de implementar las funcionalidades del usuario1, haremos un merge de la feature del
+          usuario1 sobre la rama develop
+
+          <img src="./img/9.png" alt="">
+        </li>
+
+        
+
+
+      </ol>
+
+    </section>
+
+    <hr>
+
+    <section id="Usuario2">
+      <h1>USUARIO2</h1>
+
+      <hr>
+
+
+      <li>
+        <strong>Usuario2-Comandos-Contenido-HTML
+        </strong>
+
+        <br>
+
+        Crear feature/contenidoHTML:Crearemos una nueva desde la rama develop con la que trabajaremos con el usuario2.
+        Añadiremos en está el contenido correspondiente en un nuevo archivo “contenidohtml.html” el cual irá indexado a
+        la barra de navegación
+        <img src="./img/10.png" alt="">
+        <br>
+        <br><br>
+
+        Código implentado: Al hacer clic en el botón, el texto dentro del párrafo con el identificador "demo" se
+        reemplaza con el encabezado "Hello JavaScript".
+        <img src="./img/11.png" alt="">
+
+
+
+      </li>
+
+
+      <hr>
+
+      <li>
+        <strong>     Usuario2-Desarrollo-Contenido-HTML
+        </strong>
+
+<br>
+Archivo contenido.html:En el archivo contenido.html añadiremos una breve descripción de cómo funciona y una pequeña funcionalidad que mostrará al usuario un ejemplo.
+<img src="./img/12.png" alt="">
+<br><br>
+Funcionalidad:Al hacer click sobre el botón que mostrará esta pequeña funcionalidad podemos observar que cambiara el parrafo y mostrara “Hello Javascript”
+<img src="./img/13.png" alt="">
+
+
+
+     
+      </li>
+
+      <hr>
+
+      <li>
+        <strong>Usuario2-Comandos-Atributos-HTML
+        </strong>
+
+        <br><br>
+        Crear feature/atributosHTML:Crearemos una nueva desde la rama develop con la que trabajaremos con el usuario2. Añadiremos en está el contenido correspondiente en un nuevo archivo “atributos.html” el cual irá indexado a la barra de navegación
+
+        <img src="./img/14.png" alt="">
+
+        <br><br>
+        Codigo Implementado:Cuando haces clic en el botón "Cambiar imágenes", la función changeImages() busca todas las imágenes con el atributo 'alt' que contiene la palabra "especial". Para cada imagen encontrada, cambia su atributo 'src' (fuente) a una nueva URL específica, utilizando setAttribute('src', nuevaURL). En el ejemplo proporcionado, la imagen con 'alt' igual a "especial" verá su fuente modificada a una nueva URL.
+        <img src="./img/15.png" alt="">
+      </li>
+
+    
+
+      <hr>
+
+      <li>
+        <strong>     Usuario2-Desarrollo-Atributos-HTML
+        </strong>
+<br><br>
+Archivo atributos.html:En el archivo contenido.html añadiremos una breve descripción de cómo funciona y un mini tutorial. También añadiremos una pequeña funcionalidad que mostrará al usuario un de como se cambian los atributos y cambia la imagen.
+<img src="./img/16.png" alt="">
+<br><br>
+Funcionalidad:Al hacer click sobre el botón que mostrará esta pequeña funcionalidad podemos observar que cambiara la imagen y mostrará una imagen diferente.
+<img src="./img/17.png" alt="">
+  
+      </li>
+
+      <hr>
+
+      <li>
+        <strong>Usuario2-ESLINT
+        </strong>
+        Empezaremos instalando el plugin para eslint de html. Después crearemos el archivo “eslintrc.json” donde configuraremos la identación de nuestros archivos html. Posteriormente haremos un hook que antes de hacer un commit comprobará que la indentación de nuestros archivos “.html” sea la correcta
+
+        <img src="./img/18.png" alt="">
+      </li>
+
+      <hr>
+
+      <li>
+        <strong>Usuario2-Contenido-Merge-Develop
+
+        </strong>
+        Después de terminar de implementar las funcionalidades del usuario2 en la rama feature/contenidoHTML, haremos un push a su respectiva rama remota. Posteriormente desde la rama develop haremos un merge sobre la rama feature/contenidoHTML
+
+        <img src="./img/19.png" alt="">
+      </li>
+
+      <hr>
+
+
+      <li>
+        <strong>Usuario2-Atributos-Merge-Develop
+
+        </strong>
+        Después de terminar de implementar las funcionalidades del usuario2 en la rama feature/atributosHTML, haremos un push a su respectiva rama remota. Posteriormente desde la rama develop haremos un merge sobre la rama feature/atributosHTML
+
+        <img src="./img/20.png" alt="">
+      </li>
+
+
+    </section>
+
+    <hr>
+
+    <section id="Usuario3"></section>
+
+    <h1>USUARIO3</h1>
+
+    <hr>
+
+
+    <li>
+      <strong>Usuario3-Comandos-Estilos-CSS
+      </strong>
+      <br><br>
+      Crear feature/estilosCSS:Una vez que hayamos incorporado todas las funciones del usuario 2 en la rama "develop", procederemos a crear una nueva rama denominada "feature/estilosCSS" desde la cual trabajaremos en colaboración con el usuario 3.
+      <img src="./img/21.png" alt="">
+      <br><br>
+      Código implentado:Este código HTML y JavaScript permite cambiar el color de fondo de un párrafo y luego restablecerlo a su color original.
+
+
+
+      <img src="./img/22.png" alt="">
+    </li>
+
+    <hr>
+
+    <li>
+      <strong>     Usuario3-Desarrollo-Estilos CSS
+      </strong>
+      <br><br>
+      Archivo estilos.html: En el archivo estilos.html añadiremos una breve descripción de cómo funciona y también añadiremos una pequeña funcionalidad que mostrará al usuario un de como se cambian los estilos css con js.
+      <img src="./img/23.png" alt="">
+
+      <br><br>
+      Funcionalidad:Al hacer click sobre el párrafo indicado podremos observar cómo cambia su mismo color del fondo. Tambíen podemos restablecer su color
+
+      <img src="./img/24.png" alt="">
+    </li>
+
+
+    <hr>
+
+
+    <li>
+      <strong>Usuario3-Git-Flow
+      </strong>
+      Después de realizar las debidas implementaciones en el usuario 3, haremos un push desde su rama de feature a la rama remota. Posteriormente implementaremos los cambios de esta rama a la rama develop con un merge
+
+      <img src="./img/25.png" alt="">
+    </li>
+
+
+    <hr>
+
+    <li>
+      <strong>
+        Usuario3-Release v1.0
+       
+        
+      </strong>
+      Vamos a crear una rama “Release/v1” desde develop ya que es la rama que contiene todas las features.
+      Vamos a hacer un commit sobre esta y posteriormente a añadir un tag “v1.0” sobre este mismo commit.  El ultimo paso trabajando en remoto será subir la rama release al repositorio remoto.
+      <img src="./img/26.png" alt="">
+    </li>
+
+
+    <hr>
+
+    <li>
+      <strong>
+        Usuario3-Release v1.0-Github
+
+      </strong>
+      Ahora ya desde github vamos a crear una nueva release y le asignamos el tag v1.0 que anteriormente hemos creado. Más tarde vamos a hacerle un pull request desde la release a la rama master
+
+      <img src="./img/27.png" alt="">
+    </li>
+
+<hr>
+  
+    <section id="USUARIO1MEJORA"></section>
+<h1>USUARIO 1 MEJORA</h1>
+
+
+<hr>
+
+  <li>
+    <strong>
+      Usuario1-Mejora-Hotfix
+    </strong>
+    Desde master que ya tendrá todas las funcionalidades implementadas vamos a crear una nueva rama desde la que realizaremos  las mejoras con el usuario1.
+
+-He tenido que modificar también el hook para que mire si está en esta rama de hotfix.
+
+
+    <img src="./img/28.png" alt="">
+  </li>
+
+  <hr>
+
+  <li>
+    <strong>
+      Usuario1-Mejora-Hotfix-Funcionalidad
+
+    </strong>
+    He añadido al archivo “contenidohtml” una funcionalidad que muestra una lista de tareas con tres tareas iniciales. También hay un campo de entrada de texto y un botón para agregar nuevas tareas.
+El JavaScript define una función addTask() que se ejecuta cuando se hace clic en el botón "Añadir". Esta función toma el valor del campo de entrada de texto, crea un nuevo elemento de lista (li), y añade el valor del campo de entrada
+
+
+    <img src="./img/29.png" alt="">
+  </li>
+
+  <hr>
+
+  <li>
+    <strong>
+      Usuario1-Mejora-Hotfix-Git
+
+    </strong>
+    Una vez que hayamos implementado la funcionalidad nueva, vamos a subir los cambios al repositorio remoto.
+Posteriormente desde nuestro github realizaremos dos pull request desde esta misma rama, uno a master y el otro a develop.
+
+
+    <img src="./img/30.png" alt="">
+    <img src="./img/31.png" alt="">
+  </li>
+
+</div>
+  <!-- <footer>
     <small>Guillem Vicent Martí</small>
     <address>
       <a href="#">guillemvicent33@gmail.com</a><br>
       <a href="#">+722 64 39 88 </a>
     </address>
-  </footer>
+  </footer> -->
 
 </body>
 

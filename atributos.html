@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso Guillem</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <div class="bc-banner text-center">
+    <a href="" onclick="ga('send', 'event', 'BC-banner', 'click', 'hubspot marketing signup');">
+      <div class="bc-banner-header">
+      </div>
+      <div class="bc-banner-body">
+        <h2>Curso JS Guillem Vicent</h2>
+        <p>Aprende a programar JS en 3 meses</p>
+      </div>
+      <img src="https://www.hubspot.com/hs-fs/hubfs/lead-capture-3-1.jpg?width=1800&name=lead-capture-3-1.jpg"
+        alt="especial" class="bc-banner-cover img-responsive">
+    </a>
+  </div>
+
+  <header>
+    <nav class="container">
+      <div id="home" >
+        <a href="/" class="navLinks">Home</a>
+      </div>
+      <div id="css">
+        <a href="contenidohtml.html" class="navLinks">Modificar Contenido HTML</a>
+      </div>
+      <div class="logo">
+      </div>
+      <div id="js">
+        <a href="#" class="navLinks">Estilos CSS</a>
+      </div>
+      <div id="laas" class="active">
+        <a href="atributos.html" class="navLinks">Modificar Atributos HTML</a>
+      </div>
+    </nav>
+  </header>
+
+<br><br><br>
+
+
+
+    <div class="container-obj">
+
+        <h1>Que podemos hacer con JavaScript?</h1> <br>
+
+       
+
+            <h2>
+                MINI TUTORIAL ATRIBUTOS HTML
+            </h2>
+
+            <hr>
+
+
+            <ul>
+              <li>Abre tu editor de código y crea un nuevo archivo HTML.</li>
+              <li>En el cuerpo del archivo HTML (<code>&lt;body&gt;</code>), agrega un elemento HTML con un atributo que quieras modificar. Por ejemplo, puedes agregar una imagen con un atributo <code>src</code> y un <code>id</code> único.</li>
+              <li>Debajo del elemento HTML, agrega un botón que usaremos para disparar la modificación del atributo.</li>
+              <li>Entre las etiquetas del archivo HTML, agrega una etiqueta <code>&lt;script&gt;</code>.</li>
+              <li>Dentro de la etiqueta <code>&lt;script&gt;</code>, define una función llamada <code>changeImage</code> que seleccionará el elemento de imagen y cambiará su atributo <code>src</code>.</li>
+              <li>Guarda y abre el archivo HTML en un navegador web.</li>
+              <li>Haz clic en el botón y observa cómo cambia la imagen.</li>
+          </ul>
+
+
+
+
+
+        <hr>
+
+      <button class="change" onclick="changeImages()" style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Cambiar imágenes</button>
+
+      <script>
+      function changeImages() {
+        // Obtén todos los elementos de imagen
+        var images = document.getElementsByTagName('img');
+      
+        // Para cada imagen
+        for (var i = 0; i < images.length; i++) {
+          // Si el alt de la imagen contiene la palabra "especial"
+          if (images[i].getAttribute('alt').includes('especial')) {
+            // Cambia el src a una nueva URL
+            images[i].setAttribute('src', 'https://imgs.search.brave.com/M-JX9sD-s45MWd0VeALkV_lbMiRGCWf7Uiosr8AFfNE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9lc3Ry/YWRhd2ViZ3JvdXAu/Y29tL0ltYWdlc1Vw/bG9hZC9GaWxlX1Vw/bG9hZF8yMDIyNjIw/MTkxNDk2Ml9VXzcu/d2VicA');
+          }
+        }
+      }
+      </script>
+
+
+      <img src="https://imgs.search.brave.com/jiruGMq8SRxF-Rvl2vvaNDAZkmDptAWu9jtA9F_Ze7A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/MC5lbW9qaXMud2lr/aS9lbW9qaS1waWNz/L2dvb2dsZS9iYWNr/aGFuZC1pbmRleC1w/b2ludGluZy1kb3du/LWdvb2dsZS5wbmc" alt="especial" width="300" height="200">
+
+
+</div>
+
+  <footer>
+    <small>Guillem Vicent Martí</small>
+    <address>
+      <a href="#">guillemvicent33@gmail.com</a><br>
+      <a href="#">+722 64 39 88 </a>
+    </address>
+  </footer>
+
+</body>
+
+</html>

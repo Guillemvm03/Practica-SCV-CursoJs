@@ -88,6 +88,28 @@
         <p id="demo">Prueba tu mismo!!</p>
         <button type="button" onclick='document.getElementById("demo").innerHTML = "<h1>Hello JavaScript!</h1>"'>Click Me!</button>
 
+        <hr>
+
+        <h2>Crear una lista de tareas</h2>
+        <ul id="taskList">
+          <li>Comprar leche</li>
+          <li>Ir al gimnasio</li>
+          <li>Estudiar JavaScript</li>
+        </ul>
+        <input type="text" id="newTask" placeholder="Añadir tarea">
+        <button type="button" onclick="addTask()">Añadir</button>
+
+        <hr>
+
+        <h2>Crear un formulario de contacto</h2>
+    
+
+        <hr>
+
+ 
+
+  
+
 </div>
 
 
@@ -99,6 +121,17 @@
       <a href="#">+722 64 39 88 </a>
     </address>
   </footer>
+
+  <script>
+    function addTask() {
+      var task = document.getElementById("newTask").value;
+      var ul = document.getElementById("taskList");
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(task));
+      ul.appendChild(li);
+      document.getElementById("newTask").value = "";
+    }
+  </script>
 
 </body>
 
